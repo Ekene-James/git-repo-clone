@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+ 
+        <div class="navbar">
+            <div class="burger"></div>
+            <div class="first-items">
+                <div class="logo"><a href="#"><img  src="./img/transGit.png" alt="logo"></a></div>
+               
+                <form >
+                    <input type="text" placeholder="Search or jump to...">
+                    <button>/</button>
+                </form>
+                <a class="links" href="#">Pull requests</a>
+                <a class="links" href="#">Issues</a>
+                <a class="links" href="#">Market Place</a>
+                <a class="links" href="#">Explore</a>
+            </div>
+
+            <div class="second-items">
+                
+                    <i class="fas fa-bell icon"></i> 
+
+                
+    
+                <div class="plus">
+                    <i class="fas fa-plus"></i> 
+                    <i class="fas fa-caret-down"></i> 
+                    
+                </div>
+                
+                <div class="mini-img">
+                    <img class="profileImg" src="" alt="profile-img">
+                    <i class="fas fa-caret-down"></i> 
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tabs">
+            <div class="overview">
+                <i class="fas fa-book-open"></i>
+                Overview
+            </div>
+            
+            <div class="repositories">
+                <i class="fas fa-book"></i>
+                
+                Repositories
+                <span class="repo-count"></span>
+            </div>
+            
+            <div class="projects">
+                <i class="fas fa-chart-bar"></i>
+                projects
+            </div>
+            <div class="packages">
+                
+                <i class="fa fa-cube"></i>
+                Packages
+            </div>
+        </div>
+
+        <div class="inner-container">
+            <aside class="profile">
+                <div class="profile-img"> 
+                    <div class="profile-smile">
+                        <i class="far fa-smile"></i>
+                    </div>
+                    <img class="profileImg" src="" alt="profileImage" >
+                </div>
+                <div class="texts">
+                    <h4 id='name'></h4>
+                   
+                    <p id='about'></p>
+
+                </div>
+
+            </aside>
+
+            <div class="repos">
+
+                <form class="search">
+                    <input type="text" placeholder="find a repository...">
+
+                </form>
+
+                <hr>
+                <div class="number-of-repos">
+                    <p><strong id='public-repo-count'></strong> results for <strong>public</strong> repositories</p>
+                </div>
+               
+
+                <div class="repo-contents">
+                  
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="module"  src="./repo.js"></script>
+    
+</body>
+</html>
+
+    
