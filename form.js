@@ -67,7 +67,7 @@ form.addEventListener('submit', handleSubmit)
           btn.classList.remove('active');
         } else {
           window.localStorage.setItem('user', JSON.stringify(result.data))
-         window.location.href = 'index.html'
+         window.location.href = 'repo.html'
         }
 
        
